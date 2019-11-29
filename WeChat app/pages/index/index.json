@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "floor":"/components/floor/floor"
+  },
+  "enablePullDownRefresh":true,
+  "backgroundColor":"#eee",
+  "backgroundTextStyle":"light",
+  "onReachBottomDistance":50
+}

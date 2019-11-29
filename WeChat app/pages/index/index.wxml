@@ -1,0 +1,32 @@
+<view>
+   <!-- 轮播 -->
+  <swiper class="swiper" indicator-dots="{{true}}" indicator-color="#fff" indicator-active-color="#dc5687" autoplay="{{true}}" circular="{{true}}">
+    <swiper-item>
+      <image src="/images/banner/01.webp"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/banner/02.webp"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/banner/03.webp"></image>
+    </swiper-item>
+  </swiper>
+  <!-- 轮播结束 -->
+  <!-- 宫格导航 -->
+  <view class="grid">
+    <view class="grid-content" wx:for="{{grids}}" wx:key="{{item.ID}}">
+      <navigator>
+        <image src="{{item.IMAGE}}"></image>
+        <text>{{item.MALL_CATEGORY_NAME}}</text>
+      </navigator>
+    </view>
+  </view>
+  <!--/宫格导航  -->
+  <!-- 楼层 -->
+    <floor title="热带水果" lists="{{lists1}}"></floor>
+  <image class="loading" src="http://hbimg.b0.upaiyun.com/ea6f439b84e38bfab25ad77af46ab2fc34408c39944d-5XNYvG_fw658"
+  wx:if="{{!isEnded}}"
+  ></image>
+  <view class="end" wx:else>我也是有底线的</view>
+  <!-- /楼层 -->
+</view>

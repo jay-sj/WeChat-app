@@ -1,0 +1,18 @@
+<view class="floor">
+  <view class="floor-top">
+    <view class="floor-top__title">{{title}}</view>
+    <image class="floor-top__more" src="/images/gengduo.png"></image>
+  </view>
+  <view class="floor-main">
+
+    <view class="item" wx:for="{{lists}}" wx:key="{{item.ID}}">
+      <image mode="aspectFill" src="{{item.PICTURE_COMPERSS_PATH}}"></image>
+      <text class="item-name">{{item.NAME}}</text>
+      <view class="price">
+        <view class="old-price">￥{{item.ORI_PRICE}}</view>
+        <view class="now-price">￥{{item.PRESENT_PRICE}}</view>
+      </view> 
+    </view>
+    
+  </view>
+</view>
